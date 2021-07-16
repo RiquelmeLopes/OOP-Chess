@@ -20,7 +20,6 @@ public class Main {
 		XadrezPosicao source = UI.readXadrezPosicao(sc);
 		
 		boolean[][] possibleMoves = xadrezMatch.possibleMoves(source);
-		UI.printTabuleiro(xadrezMatch.getPecas(), possibleMoves);
 		
 		System.out.println();
 		System.out.print("target: ");
