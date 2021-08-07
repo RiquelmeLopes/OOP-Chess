@@ -9,9 +9,8 @@ import xadrez.XadrezPosicao;
 
 public class UI {
 	
-	public static XadrezPosicao readXadrezPosicao(Scanner sc) {
+	public static XadrezPosicao readXadrezPosicao(String s) {
 		try {
-		String s = sc.nextLine();
 		char column = s.charAt(0);
 		int row = Integer.parseInt(s.substring(1));
 		return new XadrezPosicao(column, row);
