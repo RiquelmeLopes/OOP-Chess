@@ -28,9 +28,9 @@ public class Main {
 			UI.printTabuleiro(xadrezMatch.getPecas());
 			System.out.println();
 			if (xadrezMatch.getCurrentPlayer() == Cor.WHITE) {
-				System.out.print(jogador1 + " , digite seu movimento : (caso queira desistir, faça um movimento invalido) ");
+				System.out.print(jogador1 + " , digite seu movimento : ");
 			} else
-				System.out.print(jogador2 + " , digite seu movimento : (caso queira desistir, faça um movimento invalido) ");
+				System.out.print(jogador2 + " , digite seu movimento : ");
 
 			String movimento = sc.nextLine();
 			String s[] = movimento.split(":");
