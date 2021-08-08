@@ -28,7 +28,7 @@ public class PeaoP extends XadrezPeca {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		p.setValues(position.getRow() + 2, position.getColumn());
-		Position p2 = new Position(position.getRow() - 1, position.getColumn());
+		Position p2 = new Position(position.getRow() + 1, position.getColumn());
 		if (getTabuleiro().positionExists(p) && !getTabuleiro().thereIsAPeca(p) && getTabuleiro().positionExists(p2) && !getTabuleiro().thereIsAPeca(p2) &&getMoveCount() == 0) {
 			mat[p.getRow()][p.getColumn()] = true;
 		
