@@ -1,7 +1,7 @@
 package app;
 
 import java.util.InputMismatchException;
-import java.util.Scanner;
+
 
 import xadrez.XadrezMatch;
 import xadrez.XadrezPeca;
@@ -10,7 +10,10 @@ import xadrez.XadrezPosicao;
 public class UI {
 	
 	public static XadrezPosicao readXadrezPosicao(String s) {
+		
+
 		try {
+		
 		char column = s.charAt(0);
 		int row = Integer.parseInt(s.substring(1));
 		return new XadrezPosicao(column, row);
